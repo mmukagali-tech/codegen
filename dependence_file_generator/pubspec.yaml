@@ -1,0 +1,26 @@
+name: dependence_file_generator
+description: A starting point for Dart libraries or applications.
+# version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.1.5
+
+dependencies:
+  dependence_file_annotation:
+    path: ../dependence_file_annotation
+  analyzer: ^6.0.0
+  build: ^2.4.1
+  code_builder: ^4.7.0
+  dartx: ^1.2.0
+  dart_style: ^2.3.3
+  file: ^7.0.0
+  glob: ^2.1.2
+  source_gen: ^1.4.0
+  yaml: ^3.1.2
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0
+  flutter_lints: ^2.0.3
+  build_test: ^2.2.1

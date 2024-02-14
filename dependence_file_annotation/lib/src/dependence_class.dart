@@ -1,0 +1,3 @@
+class DependenceClass {
+  const DependenceClass();
+}

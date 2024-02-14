@@ -1,0 +1,19 @@
+builders:
+  annotated_elements:
+    import: "package:dependence_file_generator/dependence_file_generator.dart"
+    builder_factories: ["annotatedElementsBuilder"]
+    build_extensions:
+      .dart:
+        - ".dependence"
+    auto_apply: dependents
+    build_to: cache
+    runs_before: [ "dependence_file|dependence_file" ]
+  dependence_file:
+    import: "package:dependence_file_generator/dependence_file_generator.dart"
+    builder_factories: ["dependenceBuilder"]
+    build_extensions:
+      .dart:
+        - ".dependence.dart"
+    auto_apply: dependents
+    build_to: source
+    required_inputs: [".dependence"]

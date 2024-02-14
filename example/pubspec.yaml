@@ -1,0 +1,19 @@
+name: example
+description: A sample command-line application.
+# version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.0.5
+
+# Add regular dependencies here.
+dependencies:
+  dependence_file_annotation:
+    path: ../dependence_file_annotation
+
+dev_dependencies:
+  dependence_file_generator:
+    path: ../dependence_file_generator
+  build_runner: ^2.0.0
+  lints: ^2.0.0
+  test: ^1.21.0
